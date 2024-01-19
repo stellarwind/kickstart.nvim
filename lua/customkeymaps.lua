@@ -1,7 +1,8 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 -- Custom Keymaps
-
+map('n', '<leader>c', '0gc$', { silent = true })
+map('v', '<leader>b', 'gb', { desc = 'Comment block', silent = true })
 -- Nvim Tree
 map('n', '<leader>e', ':NvimTreeToggle<CR>', { silent = true })
 
@@ -26,7 +27,7 @@ map('n', '<A-0>', '<Cmd>BufferLast<CR>', opts)
 -- Pin/unpin buffer
 map('n', '<A-p>', '<Cmd>BufferPin<CR>', opts)
 -- Close buffer
-map('n', '<A-c>', '<Cmd>BufferClose<CR>', opts)
+map('n', '<A-x>', '<Cmd>BufferClose<CR>', opts)
 -- Wipeout buffer
 --                 :BufferWipeout
 -- Close commands
