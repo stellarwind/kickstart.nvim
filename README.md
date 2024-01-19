@@ -25,4 +25,4 @@ Nvim tree:
 "d" - delete file
 "r" - rename file
 
-git clone https://github.com/stellarwind/kickstart.nvim.git $env:USERPROFILE\AppData\Local\nvim\ 
+`git clone https://github.com/stellarwind/kickstart.nvim.git $env:USERPROFILE\AppData\Local\nvim\ `
