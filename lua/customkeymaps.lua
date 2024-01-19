@@ -1,10 +1,17 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
+
 -- Custom Keymaps
-map('n', '<leader>c', '0gc$', { silent = true })
+-- New tab buffer
+map('n', '<C-n>', ':ene<CR>', { silent = true })
+
+-- LSP
+map('n', '<leader>c', 'gcc', { silent = true })
 map('v', '<leader>b', 'gb', { desc = 'Comment block', silent = true })
+
 -- Nvim Tree
 map('n', '<leader>e', ':NvimTreeToggle<CR>', { silent = true })
+map('n', '<C-e>', ':NvimTreeFocus<CR>', { silent = true })
 
 -- Barbar
 -- Move to previous/next
