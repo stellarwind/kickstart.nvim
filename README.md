@@ -2,7 +2,7 @@
 
 "/" - Start searching
 "n" - repeat previous search
-":nohl" - remove search highlight
+"Escape" - remove search highlight
 
 
 "space space" - buffer telescope search
@@ -10,6 +10,7 @@
 "s f f" - telescope search for files
 
 "leader e" - toggle tree view
+"ctrl e" - toggle focus on tree
 
 "leader c" - comment current line (LSP)
 "leader b" - comment block in visual mode
@@ -17,7 +18,7 @@
 "Alt , ." - switch buffer tabs
 "Alt 1 2 3.." - jump to buffer tabs
 
-
+"Alt - z" toggle wrapping
 
 Nvim tree:
 

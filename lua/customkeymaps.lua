@@ -1,6 +1,9 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- Disable highlight on escape
+map('n', '<Esc>', ':nohl<CR>', { silent = true })
+
 -- Format
 map('n', '<leader>f', ':Format<CR>', { silent = true })
 
