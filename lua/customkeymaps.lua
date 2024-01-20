@@ -1,6 +1,13 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- Format
+map('n', '<leader>f', ':Format<CR>', { silent = true })
+
+-- Wrap toggle
+map('n', '<A-z>', ':set wrap!<CR>', { silent = true })
+
+
 -- Custom Keymaps
 -- New tab buffer
 map('n', '<C-n>', ':ene<CR>', { silent = true })
