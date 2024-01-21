@@ -1,6 +1,9 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- Find refs
+map('n', '<F12>', 'gr', { silent = true })
+
 -- Open old files
 map('n', '<F4>', ':Telescope oldfiles<CR>', { silent = true })
 
