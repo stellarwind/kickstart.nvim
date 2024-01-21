@@ -1,6 +1,9 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- Select all 
+map('n', '<C-a>', 'ggVG', { silent = true })
+
 -- Find refs
 map('n', '<F12>', 'gr', { silent = true })
 
