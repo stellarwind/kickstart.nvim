@@ -1,6 +1,11 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- Window navigation_message
+map('n', '<C-h>', '<C-w>h', { silent = true})
+map('n', '<C-j>', '<C-w>j', { silent = true})
+map('n', '<C-k>', '<C-w>k', { silent = true})
+map('n', '<C-l>', '<C-w>l', { silent = true})
 -- Select all 
 map('n', '<C-a>', 'ggVG', { silent = true })
 
