@@ -2,11 +2,11 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 -- Window navigation_message
-map('n', '<C-h>', '<C-w>h', { silent = true})
-map('n', '<C-j>', '<C-w>j', { silent = true})
-map('n', '<C-k>', '<C-w>k', { silent = true})
-map('n', '<C-l>', '<C-w>l', { silent = true})
--- Select all 
+map('n', '<C-h>', '<C-w>h', { silent = true })
+map('n', '<C-j>', '<C-w>j', { silent = true })
+map('n', '<C-k>', '<C-w>k', { silent = true })
+map('n', '<C-l>', '<C-w>l', { silent = true })
+-- Select all
 map('n', '<C-a>', 'ggVG', { silent = true })
 
 -- Find refs
@@ -82,14 +82,14 @@ map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 map('n', '<C-t>', ':ToggleTerm<CR>', { silent = true })
 
 function _G.set_terminal_keymaps()
-  local opts = {buffer = 0}
-  vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
-  vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
-  vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
-  vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
-  vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
-  vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
-  vim.keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]], opts)
+  local optsloc = { buffer = 0 }
+  vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], optsloc)
+  vim.keymap.set('t', 'jk', [[<C-\><C-n>]], optsloc)
+  vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], optsloc)
+  vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], optsloc)
+  vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], optsloc)
+  vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], optsloc)
+  vim.keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]], optsloc)
 end
 
 -- if you only want these mappings for toggle term use term://*toggleterm#* instead
