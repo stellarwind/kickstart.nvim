@@ -21,23 +21,22 @@ local cheader = {
 
 local footer = ""
 
-
-
 return {
   'nvimdev/dashboard-nvim',
   event = 'VimEnter',
   config = function()
     require('dashboard').setup {
       theme = 'hyper',
+      hide = {
+        tabline = true
+      },
       config = {
         header = cheader,
+
         week_header = {
           enable = false,
         },
 
-        hide = {
-          tabline = true
-        },
         shortcut = {
           { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
           {
@@ -57,9 +56,7 @@ return {
         },
 
         footer = { footer },
-
       },
-
     }
   end,
   dependencies = { { 'nvim-tree/nvim-web-devicons' } }
