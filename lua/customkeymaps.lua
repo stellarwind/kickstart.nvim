@@ -1,6 +1,11 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+
+-- Scroll by one line
+map('n', '<C-Up>', '<C-y>', opts)
+map('n', '<C-Down>', '<C-e>', opts)
+
 -- Window navigation_message
 map('n', '<C-h>', '<C-w>h', { silent = true })
 map('n', '<C-j>', '<C-w>j', { silent = true })
@@ -24,8 +29,6 @@ map('n', '<leader>f', ':Format<CR>', { silent = true })
 -- Wrap toggle
 map('n', '<A-z>', ':set wrap!<CR>', { silent = true })
 
-
--- Custom Keymaps
 -- New tab buffer
 map('n', '<C-n>', ':ene<CR>', { silent = true })
 
