@@ -31,8 +31,8 @@ return {
         tabline = true
       },
       config = {
-        header = cheader,
-
+        header =  cheader,
+        -- header = vim.split(cheader, "\n"),
         week_header = {
           enable = false,
         },
