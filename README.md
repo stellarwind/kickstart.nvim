@@ -31,6 +31,6 @@ git clone https://github.com/stellarwind/kickstart.nvim.git $env:USERPROFILE\App
 ```
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/stellarwind/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
