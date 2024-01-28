@@ -234,6 +234,9 @@ require('lazy').setup({
 -- NOTE: You can change these options as you wish!
 
 -- Set highlight on search
+require("theme")
+vim.o.relativenumber = true
+
 vim.o.hlsearch = true
 
 -- Make line numbers default
